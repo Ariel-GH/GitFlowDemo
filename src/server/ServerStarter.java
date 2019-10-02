@@ -26,7 +26,7 @@ import server.gui.serverGuiController;
  */
 public class ServerStarter extends Application {
 	private static final Logger LOGGER = Logger.getLogger(Client.class.getName());
-	//final public static int DEFAULT_PORT = 5555;
+	//final public static int DEFAULT_PORT = 5556;
 	public static ServerConsole server;
 	public static serverGuiController severGui;
 	/**
