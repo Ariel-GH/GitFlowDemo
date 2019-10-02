@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="paneBookDetails" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="542.0" style="-fx-background-color: #F5F5F5; -fx-background-radius: 10px; -fx-border-radius: 10px; -fx-border-style: groove; -fx-border-color: #022b3a; -fx-border-width: 2px;" styleClass="SearchPane" stylesheets="@../styles/mainView.css" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controllers.BookDetailsController">
+   <children>
+      <ImageView fx:id="bookImage" fitHeight="167.0" fitWidth="147.0" layoutX="16.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true" style="-fx-padding: 10;">
+         <image>
+            <Image url="@../resources/book-no-image.png" />
+         </image>
+      </ImageView>
+      <Line endX="194.0" layoutX="269.0" layoutY="66.0" startX="-100.0" />
+      <Label id="" fx:id="lblBookNameDetails" layoutX="168.0" layoutY="32.0" text="Book Name">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label id="" fx:id="lblAuthorDetails" layoutX="168.0" layoutY="47.0" text="Author">
+         <font>
+            <Font name="System Italic" size="11.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="31.0" fitWidth="36.0" layoutX="34.0" layoutY="296.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/available-books-copies-numbe.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="66.0" layoutY="294.0" text="Available copies: ">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnOrderBook" layoutX="22.0" layoutY="337.0" mnemonicParsing="false" onAction="#onOrderCopyBtn" prefHeight="41.0" prefWidth="147.0" stylesheets="@../styles/mainView.css" text=" Order copy        ">
+         <styleClass>
+            <String fx:value="btnWithImageWithBorder" />
+            <String fx:value="buttonShadow" />
+         </styleClass>
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/order-copy.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <ImageView fitHeight="31.0" fitWidth="36.0" layoutX="34.0" layoutY="196.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../resources/location-on-self.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="67.0" layoutY="194.0" text="Location on shelf:">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnTableOfContent" layoutX="26.0" layoutY="241.0" mnemonicParsing="false" onAction="#onTableOfContentBtn" text="Table of content">
+         <graphic>
+            <ImageView fitHeight="31.0" fitWidth="31.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../resources/download-table-of-content.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <stylesheets>
+            <URL value="@../styles/mainView.css" />
+            <URL value="@../styles/mainView.css" />
+         </stylesheets>
+         <styleClass>
+            <String fx:value="btnWithImageWithBorder" />
+            <String fx:value="buttonShadow" />
+         </styleClass>
+      </Button>
+      <Text fx:id="txtBookLocation" layoutX="67.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="D34 ,S" />
+      <Text fx:id="txtAvailableCopies" layoutX="66.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5" />
+      <Button fx:id="btnCloseBookDetails" layoutX="508.0" layoutY="6.0" mnemonicParsing="false" onAction="#onCloseBookDetailsBtn" prefHeight="17.0" prefWidth="14.0" styleClass="btnWithImage">
+         <graphic>
+            <ImageView fitHeight="18.0" fitWidth="13.0" pickOnBounds="true" preserveRatio="true" styleClass="btnWithImage">
+               <image>
+                  <Image url="@../resources/button/close.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Text id="" fx:id="lblDescriptionDetails" layoutX="167.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" wrappingWidth="294.999997317791" />
+      <Text fx:id="txtBookOrderStatusNotice" fill="RED" layoutX="129.0" layoutY="352.0" strokeType="OUTSIDE" strokeWidth="0.0" text="NOTICE: you cannot place order due to your status condition!" visible="false">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+   </children>
+</Pane>
