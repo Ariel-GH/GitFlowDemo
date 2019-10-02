@@ -72,6 +72,8 @@ public class ViewStarter extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		try {
+			LOGGER.info("EtayFB - starting of start function");
+
 			FXMLLoader loader = new FXMLLoader();
 			Parent root = loader.load(getClass().getResource("/client/boundery/layouts/main_view.fxml"));
 
@@ -87,6 +89,8 @@ public class ViewStarter extends Application {
 
 			primaryStage.show();
 			primaryStage.setScene(scene);
+
+			LOGGER.info("EtayFB - end of start function");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
