@@ -101,3 +101,5 @@ public class ViewStarter extends Application {
 		ViewStarter.client.handleMessageFromClientUI(new Message(OperationType.Logout, usr));
 	}
 }
+
+//comment in feature branch
