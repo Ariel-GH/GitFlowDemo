@@ -32,7 +32,7 @@ public class AutomaticFunctions {
 	public static void checkLatesInReturns() throws SQLException
 	{
 		
-		System.out.println("function 1 strat!!!");
+		System.out.println("function 1 strat!!! git course change");
 		LocalDate today=LocalDate.now();
 		today=today.minusDays(1L);
 		Date date=Date.valueOf(today);
