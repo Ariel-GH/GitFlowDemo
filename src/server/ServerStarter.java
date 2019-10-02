@@ -33,7 +33,7 @@ public class ServerStarter extends Application {
      * main method
 	 */
 	public static void main(String[] args) {
-
+		System.out.println("ServerStarter");
 		launch(args);
 	}
 	/**
